@@ -1,6 +1,7 @@
 # README
 
-Experiments with video (.mp4) and subtitle files (.vtt)
+Experiments with video (.mp4) and subtitle files (.vtt).
+Apache/PHP is needed for video serving at the moment.
 
 ## Oral history Video Tests
 
@@ -15,14 +16,14 @@ Experiments with video (.mp4) and subtitle files (.vtt)
 
 Add 4 files:
 
-poster.png
-test.mp4
-test.vtt
-testchapters.vtt
+- poster.png
+- test.mp4
+- test.vtt
+- testchapters.vtt
 
 
 
-## links
+## Examples
 
 
 - http://localhost
