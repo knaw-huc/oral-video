@@ -1,0 +1,35 @@
+version: '3'
+services: 
+    mysql:
+        image: mariadb:10.5
+        volumes: 
+            - mysqldb:/var/lib/mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: rood
+            MYSQL_DATABASE: "soundfiles"
+
+    # huc-editor backend & frontend
+    php-apache:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - 80:80
+        volumes: 
+            - ./html:/var/www/html/ # during development
+                
+        environment:
+            TITLE: "Able Player  "
+            PROFILE: "Interview"
+            SUBTITLE: "All you need for development"
+            BASE_URL: "http://localhost/"
+            TZ: "Europe/Amsterdam"
+            DB_SERVER: mysql
+            DB_USER: root
+            DB_PASSWD: rood
+            DB_NAME: soundfiles
+
+
+volumes:
+    mysqldb:       
+    soundfiles:
