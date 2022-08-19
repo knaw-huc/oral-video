@@ -26,5 +26,6 @@ Add 4 files:
 ## Examples
 
 
-- http://localhost
-- http://localhost/chaptertest.html
+- http://localhost/
+- 
+- 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <!-- Dependencies -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" href="build/ableplayer.min.css" type="text/css"/>
+
+<link rel="stylesheet" href="styles/huc-video.css" type="text/css"/>
+
+<script src="build/ableplayer.min.js"></script>
+
+<!-- JavaScript -->
+    <title>Document</title>
+</head>
+<body>
+    <h1>Able Player</h1>
+
+
+    <!-- <audio id="audio1" data-able-player preload="auto">
+        <source type="audio/ogg" src="path_to_audio_file.ogg"/>
+        <source type="audio/mpeg" src="path_to_audio_file.mp3"/>
+      </audio> -->
+
+
+
+      <video id="video1" data-able-player preload="auto" width="480" height="360" poster="testbestanden/poster.png">
+        <source type="video/webm" src="testbestanden/test.webm" />
+        <source type="video/mp4" src="testbestanden/test.mp4" />
+        <track kind="captions" src="testbestanden/test.vtt"/>
+        <track kind="chapters" src="testbestanden/testchapters.vtt" srclang="nl"/>
+
+        <!-- <track kind="descriptions" src="path_to_descriptions.vtt"/> -->
+      </video>
+</body>
+
+
+</html>
